@@ -65,9 +65,9 @@ export class GameMap extends TongeringGameObject {
                 let r = parseInt(Math.random() * this.rows);
                 let c = parseInt(Math.random() * this.cols);
 
-                if (g[r][c] || g[this.rows - 1 - c][this. col - 1 - r]) continue;
+                if (g[r][c] || g[this.rows - 1 - r][this. col - 1 - c]) continue;
                 if (r == 1 && c == this.cols - 2 || r == this.rows - 2 && c == 1) continue;
-                g[r][c] = g[c][r] = true;
+                g[r][c] = g[this.rows - 1 - r][this.cols - 1 - c] = true;
                 break;
             }
         }
