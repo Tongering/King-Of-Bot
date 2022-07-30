@@ -1,9 +1,9 @@
 package com.tongering.backend.config.filiter;
 
-import com.kob.backend.mapper.UserMapper;
-import com.kob.backend.pojo.User;
-import com.kob.backend.service.impl.utils.UserDetailsImpl;
-import com.kob.backend.utils.JwtUtil;
+import com.tongering.backend.mapper.UserMapper;
+import com.tongering.backend.pojo.User;
+import com.tongering.backend.service.impl.util.UserDetailsImpl;
+import com.tongering.backend.utils.JwtUtil;
 import io.jsonwebtoken.Claims;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
