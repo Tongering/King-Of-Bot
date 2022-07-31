@@ -27,10 +27,10 @@ export class GameMap extends TongeringGameObject {
         if (sx == tx && sy == ty) return true;
         g[sx][sy] = true;
 
-        let dx = [-1, 0, 1, 0], dy = [0, 1, 0 - 1];
+        let dx = [-1, 0, 1, 0], dy = [0, 1, 0 , -1];
         for (let i = 0; i < 4; i++){
             let x = sx + dx[i], y = sy + dy[i];
-            if (!g[x][y] || this.check_connectivity(g, x, y, tx, ty)) {
+            if (!g[x][y] && this.check_connectivity(g, x, y, tx, ty)) {
                 return true;
             }
         }
