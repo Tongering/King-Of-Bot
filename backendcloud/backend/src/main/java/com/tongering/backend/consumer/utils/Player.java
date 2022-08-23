@@ -13,6 +13,8 @@ import java.util.List;
 public class Player { // 用于维护玩家位置信息
 
     private Integer id;
+    private Integer botId; // -1 表示自己上场
+    private String botCode;
     private Integer sx;
     private Integer sy;
     private List<Integer> steps; // 用于存放用户每一步信息

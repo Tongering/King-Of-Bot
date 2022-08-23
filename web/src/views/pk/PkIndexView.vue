@@ -21,7 +21,8 @@ export default {
         
         const store = useStore();
         console.log(store.state.pk.loser);
-        const socketUrl = `ws://127.0.0.1:3000/websocket/${store.state.user.token}/`;
+        const socketUrl = `ws://192.168.0.12:3000/websocket/${store.state.user.token}/`;
+        store.commit("updateLoser", "none");
 
         let socket = null;
         onMounted(() => {
