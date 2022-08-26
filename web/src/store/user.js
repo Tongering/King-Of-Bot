@@ -36,7 +36,7 @@ export default {
     actions: {//异步，调用用dispatch
         login(context, data) {
             $.ajax({
-                url: "http://192.168.0.12:3000/user/account/token/",
+                url: "http://localhost:3000/user/account/token/",
                 type: "post",
                 data: {
                     username: data.username,
@@ -59,7 +59,7 @@ export default {
         },
         getinfo(context, data) {
             $.ajax({
-                  url: "http://192.168.0.12:3000/user/account/info/",
+                  url: "http://localhost:3000/user/account/info/",
                   type: "get",
                   headers: {
                       Authorization: "Bearer " + context.state.token,

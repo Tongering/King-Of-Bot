@@ -15,14 +15,14 @@ import java.util.Date;
 public class Record {
     @TableId(type = IdType.AUTO)
     private Integer id;
-    private Integer a_id;
-    private Integer a_sx;
-    private Integer a_sy;
-    private Integer b_id;
-    private Integer b_sx;
-    private Integer b_sy;
-    private String a_steps;
-    private String b_steps;
+    private Integer aId;
+    private Integer aSx;
+    private Integer aSy;
+    private Integer bId;
+    private Integer bSx;
+    private Integer bSy;
+    private String aSteps;
+    private String bSteps;
     private String map;
     private String loser;
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "Asia/Shanghai")

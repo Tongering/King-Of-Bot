@@ -33,11 +33,11 @@ public class WebSocketServer {
     final public static ConcurrentHashMap<Integer, WebSocketServer> users = new ConcurrentHashMap<>();
     private User user;
     private Session session = null;
-    private static UserMapper userMapper;
+    public static UserMapper userMapper;
     public static RecordMapper recordMapper;
     public static BotMapper botMapper;
     public static RestTemplate restTemplate;
-    public Game game = null;
+    public  Game game = null;
     private final static String addPlayerUrl = "http://127.0.0.1:3001/player/add/";
     private final static String removePlayerUrl = "http://127.0.0.1:3001/player/remove/";
 
